@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Mohammad Lab Task" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Lab Task</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <style>
+        .infoTable td {
+            height: 1.5em;
+        }
+
+        .cd {
+            padding-bottom: 0%;
+        }
+    </style>
+    <script>window.onload = function () {
+            var url = document.location.href,
+                params = url.split('?')[1].split('&'),
+                data = {}, tmp;
+            for (var i = 0, l = params.length; i < l; i++) {
+                tmp = params[i].split('=');
+                data[tmp[0]] = tmp[1];
+            }
+            document.getElementById('here').innerHTML = data.cdName;
+            var list, index;
+            list = document.getElementsByClassName('img');
+            for (index = 0; index < list.length; ++index) {
+                list[index].setAttribute('src', data.cdName + ".jpeg");
+            }
+        }</script>
+</head>
+
+<body>
+    <div class="container">
+        <h3 class="font">Tracks of CD: <span id="here"></span> ✨</h3>
+        <div class="cd">
+            <!-- <div class="imgDiv"><img class="img" src="origins.jpeg" /></div> -->
+            <img class="img" />
+            <div class="info">
+                <table class="infoTable">
+                    <tr>
+                        <td><a href="https://www.youtube.com/watch?v=fKopy74weus" target="_blank">Track Title:
+                                Thunder</a></td>
+                    </tr>
+                    <tr>
+                        <td>Artist Name: Imagin Dragons</td>
+                    </tr>
+                    <tr>
+                        <td>CD Title: origins</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="cd">
+            <!-- <div class="imgDiv"><img class="img" src="origins.jpeg" /></div> -->
+            <img class="img" />
+            <div class="info">
+                <table class="infoTable">
+                    <tr>
+                        <td><a href="https://www.youtube.com/watch?v=7wtfhZwyrcc" target="_blank">Track Title:
+                                Believer</a></td>
+                    </tr>
+                    <tr>
+                        <td>Artist Name: Imagin Dragons</td>
+                    </tr>
+                    <tr>
+                        <td>CD Title: origins</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="cd">
+            <!-- <div class="imgDiv"><img class="img" src="origins.jpeg" /></div> -->
+            <img class="img" />
+            <div class="info">
+                <table class="infoTable">
+                    <tr>
+                        <td><a href="https://www.youtube.com/watch?v=0I647GU3Jsc" target="_blank">Track Title:
+                                Natural</a></td>
+                    </tr>
+                    <tr>
+                        <td>Artist Name: Imagin Dragons</td>
+                    </tr>
+                    <tr>
+                        <td>CD Title: origins</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="cd">
+            <!-- <div class="imgDiv"><img class="img" src="origins.jpeg" /></div> -->
+            <img class="img" />
+            <div class="info">
+                <table class="infoTable">
+                    <tr>
+                        <td><a href="https://www.youtube.com/watch?v=I-QfPUz1es8" target="_blank">Track Title:
+                                BadLiar</a></td>
+                    </tr>
+                    <tr>
+                        <td>Artist Name: Imagin Dragons</td>
+                    </tr>
+                    <tr>
+                        <td>CD Title: origins</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- <a href="cds.html">back to CDs :)</a> -->
+    </div>
+</body>
+
+</html>
