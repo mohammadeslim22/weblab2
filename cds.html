@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="Mohammad Lab Task" content="width=device-width, initial-scale=1.0">
+    <title>Mohammad Lab Task</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <script>window.onload = function () {
+	//debugger;
+            var url = document.location.href,
+                params = url.split('?')[1].split('&'),
+                data = {}, tmp;
+          
+            for (var i = 0; i < params.length; i++) {
+                tmp = params[i].split('=');
+                data[tmp[0]] = tmp[1];
+            }
+            
+            if (data.songName.length !== 0) {
+                document.getElementById('here1').innerHTML = "for a song by the name: " + data.songName;
+            }
+            if (data.cdList.length !== 0) {
+                document.getElementById('here2').innerHTML = "<br>for cd: " + data.cdList;
+            }
+        }</script>
+</head>
+
+<body>
+    <div class="container">
+        <h4 class="font">Results <span id="here1"></span> <span id="here2"></span>
+            ✨
+        </h4>
+        <div class="cd">
+            <!-- <div class="imgDiv"><img class="img" src="origins.jpeg" /></div> -->
+            <a href="cd.html?cdName=origins"><img class="img" src="origins.jpeg" /></a>
+            <div class="info">
+                <table class="infoTable">
+                    <tr>
+                        <td><a href="cd.html?cdName=origins">CD Title: origins</a></td>
+                        <td>Artist: Imagin Dragons</td>
+                    </tr>
+                    <tr>
+                        <td>Count of tracks: 15</td>
+                        <td>Date of relese: 15/15/2015</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="cd">
+            <!-- <div class="imgDiv"><img class="img" src="origins.jpeg" /></div> -->
+            <a href="cd.html?cdName=nightVisions"><img class="img" src="nightVisions.jpeg" /></a>
+            <div class="info">
+                <table class="infoTable">
+                    <tr>
+                        <td><a href="cd.html?cdName=nightVisions">CD Title: nightVisions</a></td>
+                        <td>Artist: Imagin Dragons</td>
+                    </tr>
+                    <tr>
+                        <td>Count of tracks: 25</td>
+                        <td>Date of relese: 15/15/2015</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="cd">
+            <!-- <div class="imgDiv"><img class="img" src="origins.jpeg" /></div> -->
+            <a href="cd.html?cdName=evolve"><img class="img" src="evolve.jpeg" /></a>
+            <div class="info">
+                <table class="infoTable">
+                    <tr>
+                        <td><a href="cd.html?cdName=evolve">CD Title: evolve</a></td>
+                        <td>Artist: Imagin Dragons</td>
+                    </tr>
+                    <tr>
+                        <td>Count of tracks: 15</td>
+                        <td>Date of relese: 15/15/2015</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
