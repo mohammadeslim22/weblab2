@@ -1,0 +1,79 @@
+/* font-family: "Satisfy", cursive; */
+/* font-family: "Merienda", cursive; */
+/* font-family: "Courgette", cursive; */
+
+body {
+  background-image: url(music.jpg);
+  background-repeat: no-repeat;
+  background-size: 50%;
+
+  font-size: 2em;
+}
+.font {
+  font-family: "Courgette", cursive;
+}
+.container {
+  width: 50%;
+  height: 50%;
+  margin-top: 5%;
+  margin-left: 25%;
+  /* border: 5px solid black; */
+}
+
+.submitBtn {
+  width: 5em;
+  border-radius: 0.2em;
+  background-color: #2225b3;
+  font-size: 0.5em;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 25%;
+}
+.select {
+  font-family: "Courgette", cursive;
+  font-size: medium;
+  border-radius: 0.2em;
+  background-color: #aaa4d6;
+  font-family: "Courgette", cursive;
+}
+.cd {
+  /* border: 5px solid red; */
+  padding-bottom: 0.5em;
+}
+.info {
+  font-family: "Courgette", cursive;
+  font-size: 0.5em;
+  margin-left: 20%;
+  padding-top: 1em;
+  padding-bottom: 0.5em;
+  /* border: 5px solid blue; */
+}
+.imgDiv {
+  width: 20%;
+  height: 20%;
+}
+
+.img {
+  width: 17%;
+  float: left;
+}
+.infoTable {
+  width: 75%;
+}
+.infoTable td {
+  width: 50%;
+  padding-right: 1.5em;
+  /* margin-right: 50%; */
+  height: 2em;
+  text-align: left;
+  vertical-align: top;
+  padding-bottom: 0.5em;
+}
+a {
+  text-decoration: none;
+  color: blueviolet;
+}
+a:hover {
+  color: rgb(40, 5, 73);
+  text-shadow: 2px 1px rgb(56, 85, 238);
+}
